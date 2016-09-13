@@ -47,6 +47,11 @@ end
 
 
 group :development do
+  gem "capistrano", "~> 3.6"
+end
+
+
+group :development do
   gem 'capistrano-rails', '~> 1.1'
 end
 
