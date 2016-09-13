@@ -45,3 +45,13 @@ group :development do
   gem 'spring'
 end
 
+
+group :development do
+  gem 'capistrano-rails', '~> 1.1'
+end
+
+
+group :production do
+  gem 'unicorn'
+  gem 'unicorn-worker-killer'
+end
