@@ -1,1 +1,1 @@
-rvm use 2.1@sonu_app.co --create
+rvm use 2.2.0@sonu_app.co --create

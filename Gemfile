@@ -50,11 +50,13 @@ group :development do
   gem "capistrano", "~> 3.6"
 end
 
+gem 'capistrano-rvm'
 
 group :development do
   gem 'capistrano-rails', '~> 1.1'
 end
 
+gem 'capistrano-bundler', '~> 1.1.2'
 
 group :production do
   gem 'unicorn'

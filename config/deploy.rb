@@ -9,13 +9,13 @@ set :repo_url, 'https://github.com/ghanshyamanand/sonu_app.git'
 
 # Default deploy_to directory is /var/www/my_app_name
 # set :deploy_to, '/var/www/my_app_name'
-set (:deploy_to) { "/home/ghanshyam/#{application}/#{stage}" }
+set (:deploy_to) { "/home/ghanshyam/sonu_app/production" }
 
 
 # Default value for :scm is :git
 set :scm, :git
 
-set :rvm_ruby_string, '2.1.8'             # ruby version you are using...
+set :rvm_ruby_string, '2.2.0'             # ruby version you are using...
 set :rvm_type, :user
 
 
@@ -40,3 +40,13 @@ append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/syst
 
 # Default value for keep_releases is 5
 set :keep_releases, 5
+
+
+# before "deploy:assets:precompile","deploy:config_symlink"
+# before "deploy:assets:precompile","deploy:rename_tinymce"
+
+
+# after "deploy:update", "deploy:cleanup" #clean up temp files etc.
+# after "deploy:update_code","deploy:migrate"
+
+

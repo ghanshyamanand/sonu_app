@@ -59,3 +59,28 @@
 #     auth_methods: %w(publickey password)
 #     # password: 'please use keys'
 #   }
+
+
+
+# set :branch, "master"
+# set :rails_env, "production"
+
+# role :app, '188.166.242.86', '119.81.164.18', '128.199.221.159'
+# role :web, '188.166.242.86', '119.81.164.18', '128.199.221.159'
+# role :db, '188.166.242.86', :primary => true
+
+role :app, '139.59.30.167'
+role :web, '139.59.30.167'
+role :db, '139.59.30.167', :primary => true
+
+# set :branch, "master"
+# set :rails_env, "production"
+
+# role :app, '188.166.242.86'
+# role :web, '188.166.242.86'
+# role :db, '188.166.242.86', :primary => true
+
+
+
+
+
